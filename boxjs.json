@@ -1,55 +1,85 @@
 {
-    "id": "yuheng.app.sub",
-    "name": "yuheng 脚本订阅",
-    "author": "@yuheng",
-    "icon": "https://avatars.githubusercontent.com/u/50571734?s=460&u=808616a26243d457cae2e41ffa728895e1e5ed4b&v=4",
-    "repo": "https://github.com/Yuheng0101/X",
-    "apps": [
+    "id": "jimxs.app.sub",
+    "name": "jimxs 脚本订阅",
+            "作者": "@jimxs",
+            "repo": "https://github.com/Yuheng0101/X",
+            “图标”：[
+                “https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/mini.png”，
+                “https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/color.png”
+            ],
+            “脚本”：“https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/step.js”
+        },
         {
-            "id": "yuheng.mi.step",
-            "name": "小米刷步",
-            "descs_html": [
-                "<em>一次BoxJS持久化的尝试</em>",
-                "<ol><li>每天刷一刷</li><li>健康第一</li><li>步数第二</li></ol>",
-                "<p style='color:#ff0000;margin-top:10px;'>步数不要超过50000</p>"
+            "id": "yuheng.imaotai",
+            "name": "i茅台预约",
+            “descs_html”：[
+                “<p style='color:#ff0000;font-size:18px;font-weight:900;text-align:center;margin-top:20px;'>剧本已删除，消失再问</p>”
             ],
-            "keys": [
-                "xiaomi_step_debug",
-                "xiaomi_step_username",
-                "xiaomi_step_password",
-                "xiaomi_step_step"
+            “钥匙”：[
+                “imaotai_params”，
+                “imaotai__config__istravel”，
+                "imaotai__config__province",
+                “imaotai__config__city”，
+                “imaotai__config__itemcode”，
+                “imaotai__config__地址”，
+                “imaotai__config__location”，
+                “imaotai__config__shopid”
             ],
-            "settings": [
+            “设置”： [
                 {
-                    "id": "xiaomi_step_debug",
-                    "name": "是否输出日志",
-                    "val": false,
-                    "type": "boolean",
-                    "desc": ""
+                    "id": "imaotai__config__istravel",
+                    "name": "是否开启茅运出行",
+                    “val”：假，
+                    “类型”：“布尔值”，
+                    “描述”：“”
                 },
                 {
-                    "id": "xiaomi_step_username",
-                    "name": "小米刷步账号",
-                    "val": null,
-                    "type": "text",
-                    "rows": 1,
-                    "desc": "小米刷步账号，暂不支持多账号且只支持手机号"
+                    "id": "imaotai__config__province",
+                    "name": "省份名称",
+                    “值”：空，
+                    “类型”：“文本”，
+                    “行”：1，
+                    "desc": "必填，例如：山东省"
                 },
                 {
-                    "id": "xiaomi_step_password",
-                    "name": "小米刷步密码",
-                    "val": null,
-                    "type": "text",
-                    "rows": 1,
-                    "desc": ""
+                    "id": "imaotai__config__city",
+                    "name": "城市名称",
+                    “值”：空，
+                    “类型”：“文本”，
+                    “行”：1，
+                    "desc": "必填，例如：济南市"
                 },
                 {
-                    "id": "xiaomi_step_step",
-                    "name": "需要刷的步数",
-                    "val": null,
-                    "type": "text",
-                    "rows": 1,
-                    "desc": "置空默认10000-19999之间"
+                    "id": "imaotai__config__itemcode",
+                    "name": "预约项",
+                    "val": "10213,10214",
+                    “类型”：“文本”，
+                    “行”：1，
+                    "desc": "多品逗号隔开，需要预约的项目{'10213': '贵州茅台酒（癸卯兔年）', '2478': '贵州茅台酒（珍品）','10214': '贵州茅台酒（癸卯兔年）x2','10056': '53%vol 500ml 茅台1935'}"
+                },
+                {
+                    "id": "imaotai__config__地址",
+                    "name": "当前位置",
+                    “值”：空，
+                    “类型”：“文本”，
+                    “行”：1，
+                    "desc": "具体操作，如：山东省济南市齐鲁软件园，精确到标志性建筑物"
+                },
+                {
+                    "id": "imaotai__config__location",
+                    "name": "(选填)当前经纬度",
+                    “值”：空，
+                    “类型”：“文本”，
+                    “行”：1，
+                    "desc": "注意经度在前面，纬度在后面，例如: 117.119999,36.651216,不填根据当前位置获取"
+                },
+                {
+                    "id": "imaotai__config__shopid",
+                    "name": "(选填)需要预订的店铺id",
+                    “值”：空，
+                    “类型”：“文本”，
+                    “行”：1，
+                    "desc": "默认选择最近商场"
                 }
             ],
             "author": "@yuheng",
