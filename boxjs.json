@@ -1,7 +1,58 @@
 {
-    "id": "jimxs.app.sub",
-    "name": "jimxs 脚本订阅",
-            "作者": "@jimxs",
+    "id": "yuheng.app.sub",
+    "name": "yuheng脚本订阅",
+    "作者": "@yuheng",
+    “图标”：“https://avatars.githubusercontent.com/u/50571734?s=460&u=808616a26243d457cae2e41ffa728895e1e5ed4b&v=4”，
+    "repo": "https://github.com/Yuheng0101/X",
+    “应用”： [
+        {
+            "id": "yuheng.mi.step",
+            "name": "小米刷步",
+            “descs_html”：[
+                "<em>一次BoxJS持久化的尝试</em>",
+                "<ol><li>每天刷一刷</li><li>健康第一</li><li>步数第二</li></ol>",
+                "<p style='color:#ff0000;margin-top:10px;'>步数不要超过50000</p>"
+            ],
+            “钥匙”：[
+                “xiaomi_step_debug”，
+                “xiaomi_step_用户名”,
+                “xiaomi_step_password”,
+                “小米_步_步”
+            ],
+            “设置”： [
+                {
+                    "id": "xiaomi_step_debug",
+                    "name": "是否输出日志",
+                    “val”：假，
+                    “类型”：“布尔值”，
+                    “描述”：“”
+                },
+                {
+                    "id": "xiaomi_step_用户名",
+                    "name": "小米刷步账号",
+                    “值”：空，
+                    “类型”：“文本”，
+                    “行”：1，
+                    "desc": "小米刷步账号，暂时不支持多账号且只支持手机号"
+                },
+                {
+                    "id": "xiaomi_step_password",
+                    "name": "小米刷步密码",
+                    “值”：空，
+                    “类型”：“文本”，
+                    “行”：1，
+                    “描述”：“”
+                },
+                {
+                    "id": "xiaomi_step_step",
+                    "name": "需要刷的步数",
+                    “值”：空，
+                    “类型”：“文本”，
+                    “行”：1，
+                    "desc": "置空默认10000-19999之间"
+                }
+            ],
+            "作者": "@yuheng",
             "repo": "https://github.com/Yuheng0101/X",
             “图标”：[
                 “https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/mini.png”，
@@ -82,68 +133,149 @@
                     "desc": "默认选择最近商场"
                 }
             ],
-            "author": "@yuheng",
+            "作者": "@yuheng",
             "repo": "https://github.com/Yuheng0101/X",
-            "icons": [
-                "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/mini.png",
-                "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/color.png"
+            “图标”：[
+                “https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ae/f4/18/aef41811-955e-e6b0-5d23-6763c2eef1ab/AppIcon-0-0-1x_U007emarketing-0-0-0 -7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png",
+                “https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ae/f4/18/aef41811-955e-e6b0-5d23-6763c2eef1ab/AppIcon-0-0-1x_U007emarketing-0-0-0 -7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png"
             ],
-            "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/step.js"
+            “脚本”： ””
         },
         {
-            "id": "yuheng.95598",
+            "id": "宇恒.95598",
             "name": "网上国网",
-            "descs_html": [
-                "<a target='_blank' href='https://github.com/Yuheng0101/X/tree/main/Tasks/95598'>README.md</a>"
+            “descs_html”：[
+                “<a target='_blank' href='https://github.com/Yuheng0101/X/tree/main/Tasks/95598'>README.md</a>”
             ],
-            "keys": [
-                "95598_username",
-                "95598_password",
+            “钥匙”：[
+                "95598_用户名",
+                “95598_密码”，
                 "95598_recent_elc_fee",
-                "95598_surge_panel_config",
-                "95598_bizrt",
-                "95598_bindInfo"
+                “95598_surge_panel_config”，
+                “95598_bizrt”，
+                “95598_bindInfo”
             ],
-            "settings": [
+            “设置”： [
                 {
-                    "id": "95598_username",
+                    "id": "95598_用户名",
                     "name": "账号",
-                    "val": null,
-                    "type": "text",
-                    "rows": 1,
+                    “值”：空，
+                    “类型”：“文本”，
+                    “行”：1，
                     "desc": "手机号"
                 },
                 {
-                    "id": "95598_password",
-                    "name": "密码",
-                    "val": null,
-                    "type": "text",
-                    "rows": 1,
-                    "desc": ""
+                    "id": "95598_密码",
+                    "名称": "密码",
+                    “值”：空，
+                    “类型”：“文本”，
+                    “行”：1，
+                    “描述”：“”
                 },
                 {
                     "id": "95598_recent_elc_fee",
                     "name": "是否查看近7天用电量",
-                    "val": false,
-                    "type": "boolean",
-                    "desc": ""
+                    “val”：假，
+                    “类型”：“布尔值”，
+                    “描述”：“”
                 },
                 {
                     "id": "95598_surge_panel_config",
-                    "name": "Surge Panel配置",
-                    "val": "{'title':'','content':'','icon':'','icon-color':''}",
-                    "type": "text",
-                    "rows": 10,
+                    "name": "浪涌面板配置",
+                    "val": "{'标题':'','内容':'','图标':'','图标颜色':''}",
+                    “类型”：“文本”，
+                    “行”：10，
                     "desc": "使用方式请看README.md"
                 }
             ],
-            "author": "@yuheng",
+            "作者": "@yuheng",
             "repo": "https://github.com/Yuheng0101/X",
-            "icons": [
-                "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/83/d8/8a/83d88a92-5a4d-7a2f-118c-80d795e7a9f6/AppIcon-0-0-1x_U007emarketing-0-5-0-0-sRGB-85-220.png/144x144.png",
-                "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/83/d8/8a/83d88a92-5a4d-7a2f-118c-80d795e7a9f6/AppIcon-0-0-1x_U007emarketing-0-5-0-0-sRGB-85-220.png/144x144.png"
+            “图标”：[
+                “https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/83/d8/8a/83d88a92-5a4d-7a2f-118c-80d795e7a9f6/AppIcon-0-0-1x_U007emarketing-0-5-0 -0-sRGB-85-220.png/144x144.png",
+                “https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/83/d8/8a/83d88a92-5a4d-7a2f-118c-80d795e7a9f6/AppIcon-0-0-1x_U007emarketing-0-5-0 -0-sRGB-85-220.png/144x144.png"
             ],
-            "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.js"
+            “脚本”：“https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.js”
+        },
+        {
+            "id": "宇恒.1024",
+            "name": "某某最新技术活跃者",
+            “descs_html”：[
+                "<a target='_blank' href='https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/1024.js'>移植脚本</a>"
+            ],
+            “钥匙”：[
+                “1024_is随机”
+            ],
+            “设置”： [
+                {
+                    "id": "1024_israndom",
+                    "name": "是否随机推贴",
+                    “val”：假，
+                    “类型”：“布尔值”，
+                    “描述”：“”
+                }
+            ],
+            "作者": "@yuheng",
+            "repo": "https://github.com/Yuheng0101/X",
+            “图标”：[
+                “https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/1024.png”，
+                “https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/1024.png”
+            ],
+            “脚本”：“https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/1024.js”
+        },
+        {
+            "id": "yuheng.hlbdy",
+            "name": "最新黑料",
+            “descs_html”：[
+                "<a target='_blank' href='https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/hlbdy.js'>移植脚本</a>"
+            ],
+            “键”：[“hlbdy_nav_url”]，
+            “设置”： [
+                {
+                    “id”：“hlbdy_nav_url”，
+                    "name": "黑料最新域名",
+                    "val": "https://155.fun",
+                    “类型”：“文本”，
+                    "desc": "配置最新导航域名"
+                }
+            ],
+            "作者": "@yuheng",
+            "repo": "https://github.com/Yuheng0101/X",
+            “图标”：[
+                “https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/heilio.png”，
+                “https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/heilio.png”
+            ],
+            “脚本”：“https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/hlbdy.js”
+        },
+        {
+            "id": "yuheng.xsy",
+            "name": "小爽音刷邀请",
+            “descs_html”：[
+                "<a target='_blank' href='https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/xsy.js'>移植脚本</a>"
+            ],
+            “键”：[“xsy_invitecode”，“xsy_looptimes”]，
+            “设置”： [
+                {
+                    "id": "xsy_邀请码",
+                    "姓名": "邀请码",
+                    “值”：空，
+                    “类型”：“文本”，
+                    “描述”：“”
+                },
+                {
+                    "id": "xsy_looptimes",
+                    "name": "邀请次数",
+                    “值”：1，
+                    “类型”：“文本”，
+                    “描述”：“”
+                }
+            ],
+            "作者": "@yuheng",
+            "repo": "https://github.com/Yuheng0101/X",
+            “图标”：[
+                “https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/xsy.png”，
+                “https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/xsy.png”
+            ],
+            “脚本”：“https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/xsy.js”
         }
     ]
 }
